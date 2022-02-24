@@ -1,4 +1,4 @@
-/* Regola Generale foglio di stile */
+/* Regole Generali del foglio di stile */
 
 * {
     margin: 0;
@@ -7,14 +7,22 @@
 }
 
 body {
-    background-color: red;
+    min-width: 1400px;
+    background-color: var(--BodyColor);
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;  
 }
 
 /********* 
 Palette Colori Figma
 *********/
 :root {
-
+    --NavButton : rgba(0, 97, 255, 1);
+    --NavButtonText : rgb(255, 255, 255);
 }
 
 /********* 
@@ -23,8 +31,122 @@ Palette Colori - Blocchi
 *********/
 
 :root {
-    
+    --NavBar:rgba(244, 249, 7, 0.38);
+    --BodyColor:rgba(255, 255, 255, 0.38);
+    --NavItems:rgba(247, 196, 104, 1);
+    --HeadContainer:rgba(203, 143, 158, 1);
+    --DropBusinessCont: rgba(244, 249, 7, 0.38);
+    --ItemsBusinessCont : rgba(253, 16, 16, 0.42);
 }
 
 /********************+/ 
 
+
+/* Contenuto dell'Header 
+**********/
+
+/* NavBar */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: var(--NavBar);
+}
+
+/* Contenuto a SX della NavBar */
+
+.nav_lft {
+    background-color:var(--NavItems) ;
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.logo {
+    width: 25%;
+}
+
+.nav_lft a {
+   text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Contenuto a DX della NavBar */
+
+.nav_rgt {
+    background-color:var(--NavItems) ;
+    float: right;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.btn_nav {
+    background-color:var(--NavButton);
+    color: var(--NavButtonText);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+/* Header */
+
+.cont_header {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: var(--HeadContainer);
+}
+
+.h1_head {
+    padding-top: 25px;
+    line-height: 4rem;
+    margin: 0 auto;
+    font-size:3rem;
+    width: 750px;
+    height: 200px;
+    background-color: aqua;
+}
+
+/********************+/ 
+
+/* Contenuto del Main 
+**********/
+
+/* Larghezza fissa a Main
+alla modifica della larghezza ne 
+consegue una diminuzione da parte
+di tutti i suoi child */
+
+#site_main {
+    background-color: bisque;
+    width: 1100px;
+    height: 2000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Sezione DropBox Business */
+
+.Drop_Business {
+    background-color:var(--DropBusinessCont) ;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    top: 4rem;
+}
+
+.Itms-bsnes {
+background-color: var(--ItemsBusinessCont);
+position: absolute;
+margin: 0 auto;
+width: 95%;
+height: 95%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
