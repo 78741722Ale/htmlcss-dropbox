@@ -37,6 +37,7 @@ Palette Colori - Blocchi
     --HeadContainer:rgba(203, 143, 158, 1);
     --DropBusinessCont: rgba(244, 249, 7, 0.38);
     --ItemsBusinessCont : rgba(253, 16, 16, 0.42);
+    --Colonne : rgba(0, 0, 0, 0.596);
 }
 
 /********************+/ 
@@ -133,14 +134,15 @@ di tutti i suoi child */
 /* Sezione DropBox Business */
 
 .Drop_Business {
-    background-color:var(--DropBusinessCont) ;
+    background-color:var(--DropBusinessCont);
     position: relative;
     width: 100%;
     height: 1000px;
-    top: 4rem;
+    top: 5rem;
+    margin-bottom: 4%;
 }
 
-.Itms-bsnes {
+.Itms_bsnes {
 background-color: var(--ItemsBusinessCont);
 position: absolute;
 margin: 0 auto;
@@ -150,3 +152,53 @@ top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
 }
+
+.lg100_bsnes {
+    background-color:var(--Colonne); 
+    top:1.5rem;
+    float: left;
+    position: relative;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 150px;
+}
+
+.lg30_bsnes {
+    background-color:var(--Colonne); 
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 76%;
+    top: 5%;
+    margin-left:1.66%;
+    margin-right:1.66%;
+}
+
+/* Sezione DropBox Enterprise */
+
+.Drop_Enterprise {
+    background-color:var(--DropBusinessCont);
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 5rem;
+    margin-bottom: 7%;
+}
+
+.Enter_Title {
+    position: relative;
+    background-color:var(--Colonne); 
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.Enter_Content {
+    background-color:rgba(0, 0, 0, 0.29); 
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    position: relative;
+}
+
