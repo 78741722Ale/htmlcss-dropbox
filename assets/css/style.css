@@ -1,0 +1,30 @@
+/* Regola Generale foglio di stile */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+/********* 
+Palette Colori Figma
+*********/
+:root {
+
+}
+
+/********* 
+Palette Colori - Blocchi
+(diventerà poi inutile)
+*********/
+
+:root {
+    
+}
+
+/********************+/ 
+
