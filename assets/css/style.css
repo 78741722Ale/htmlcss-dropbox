@@ -397,18 +397,76 @@ cambia a 50/50 senza margin */
 ********/
 
 .Drop_Aziende_Cnt {
-    background-color:var(--Colonne);
+    background-color:rgba(245, 245, 245, 1);
     float: left;
     position: relative;
     width: 50%;
     height: 60%;
 }
 
+/* Container per le 2 celle */
+
+.Aznd_Cent {
+    /* background-color: rgba(223, 128, 20, 0.541); */
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Celle all'interno del
+container centrale della sezione aziende 
+
+height -md : atezza media 
+height -lg : atezza large */
+
+.Aznd-height-md {
+    /* background-color: rgba(128, 0, 128, 0.541); */
+    float: left;
+    position: relative;
+    margin:2% 2% 1.5% 2.5%;
+    width: 95%;
+    height: 30%;
+}
+
+.Aznd-height-md img {
+    width:25%;
+    height:100%;
+    position: absolute;
+    right: 80%;
+}
+
+.Aznd-height-lg {
+    /* background-color: rgba(128, 0, 128, 0.541); */
+    float: left;
+    position: relative;
+    margin:1% 2% 1% 2.5%;
+    width: 80%;
+    height: 50%;
+}
+
+.Aznd-height-lg span {
+    /* margin-top: 5%; */
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+}
+
+.Cit {
+    line-height: 1.75rem;
+    font-size: 1.3rem;
+}
+
+
+/*#region Aziende Drop DX  */
+/*#endregion Aziende Drop DX  */
+
+
 /**** Sezione Immagini Azienda a DX
 ********/
 
 .Drop_Aziende_DX {
-    background-color:var(--DropBusinessCont);
+    /* background-color:var(--DropBusinessCont); */
     float: right;
     position: relative;
     width: 25%;
