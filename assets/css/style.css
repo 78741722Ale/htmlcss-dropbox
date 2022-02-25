@@ -13,8 +13,9 @@
 }
 
 body {
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    min-width: 1440px;
+    width: 1865px;
     height: max-content;
     background-color: var(--BodyColor);
 }
