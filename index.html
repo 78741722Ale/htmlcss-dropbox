@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,22 @@
     <title>DropBox - Riproduzione Boolean</title>
     <!-- Link al foglio di stile css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link al font da Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Link a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+
     <!-- /#site_header -->
     <header id="site_header">
         <!-- NavBar principale del sito -->
         <div class="navbar clearfix">
             <!-- Contenuto a Sx della navbar, con Logo e 3 ancor -->
-            <div class="nav_lft clearfix">              
+            <div class="nav_lft clearfix">
                 <!-- <img class="logo" src="./assets/img/logo-small.png" alt="Logo di DropBox">
                 <a href="#"> Perchè DropBox? </a>
                 <a href="#"> Funzioni </a>
@@ -31,16 +39,17 @@
             e un margin bottom da 1.5 mentre in mezzo è centrato. l'immagine a DX in un suo container
             che scende sotto di circa 1rem ma allineato a SX -->
             <!-- <h1 class="h1_head">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>    -->
+            <!-- valuta cella da 60 40  -->
         </div>
     </header>
 
     <!-- /#site_main -->
     <!-- Tutte le sezioni del main hanno la stessa larghezza, ti conviene dare all'ID del
-    site main una larghezza fissa e tutte le altre section una width al 100% con margin auto -->  
+    site main una larghezza fissa e tutte le altre section una width al 100% con margin auto -->
     <main id="site_main">
-        
+
         <!-- DropBox Business -->
-       <section class="Drop_Business">
+        <section class="Drop_Business">
             <!-- Titolo della sezione Business e radiobutton -->
             <!-- 3 colonne principali sviluppate con clearfix -->
             <div class="Itms_bsnes clearfix">
@@ -49,16 +58,16 @@
                 <div class="lg30_bsnes"></div>
                 <div class="lg30_bsnes"></div>
             </div>
-       </section>
-       
-       <!-- Sezione Enterprise -->
-       <section class="Drop_Enterprise">
+        </section>
+
+        <!-- Sezione Enterprise -->
+        <section class="Drop_Enterprise">
             <!-- Contenitore del Titolo team  -->
             <div class="Enter_Title"> </div>
             <!--  Contenuto della cella Enterprise -->
             <div class="Enter_Content"></div>
-       </section>
-       
+        </section>
+
         <!-- Sezione Contatto Partner -->
         <!-- In questo caso puoi usare due colonne con float left e right -->
         <section class="Drop_Partner">
@@ -73,7 +82,7 @@
             <!--  Titolo del container  -->
             <div class="Drop_Opr_Title"> </div>
             <!--  Container Superiore con 3 immagini  -->
-            <div class="Drop_Opr_Content clearfix"> 
+            <div class="Drop_Opr_Content clearfix">
                 <div class="lg30_opr_up"></div>
                 <div class="lg30_opr_up"></div>
                 <div class="lg30_opr_up"></div>
@@ -84,9 +93,9 @@
         </section>
 
         <!-- Sezione Numero di Team Utilizzatori di Dropbox -->
-        <section class="Drop_Users"> 
+        <section class="Drop_Users">
 
-        </section>  
+        </section>
     </main>
 
     <!-- id è il container principale in larghezza e altezza -->
@@ -122,25 +131,92 @@
     <!-- Domande Frequenti -->
     <section class="Drop_Questions">
         <div class="Qstn_Main clearfix">
-            <div class="Qstn_md"></div>
-            <div class="Qstn_sm"></div>
-            <div class="Qstn_sm"></div>
-            <div class="Qstn_sm"></div>
-            <div class="Qstn_sm"></div>
+            <!-- Main Quest della sezione domande frequenti -->
+            <div class="Qstn_md"> 
+                <h2>Domande Frequenti</h2> 
+            </div>
+            <!-- Prima Domanda -->
+            <div class="Qstn_sm">
+                <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                <i class="fa fa-angle-down" style="font-size:22px"></i>
+            </div>
+            <!-- Seconda Domanda -->
+            <div class="Qstn_sm">
+                <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                <i class="fa fa-angle-down" style="font-size:22px"></i>
+            </div>
+            <!-- Terza Domanda -->
+            <div class="Qstn_sm">
+                <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                <i class="fa fa-angle-down" style="font-size:22px"></i>
+            </div>
+            <!-- Quarta  Domanda -->
+            <div class="Qstn_sm">
+                <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                <i class="fa fa-angle-down" style="font-size:22px"></i>
+            </div>
         </div>
     </section>
-    
+
     <!-- /#site_Footer -->
     <footer id="site_Footer">
         <!-- Container degli indirizzi necessiari -->
         <section class="Drop_Foot clearfix">
-                <div class="Foot_md"></div>
-                <div class="Foot_md"></div>
-                <div class="Foot_md"></div>
-                <div class="Foot_md"></div>
-                <div class="Foot_md"></div>
-                       
+            <!-- Prima cella - Dropbox -->
+            <div class="Foot_md">
+                <ul>
+                    <li class="Ul_Foot_Title">Dropbox</li>
+                    <li>Applicazione destkop</li>
+                    <li>Perchè Dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <!-- Seconda cella - Prodotti -->
+            <div class="Foot_md">
+                <ul>
+                    <li class="Ul_Foot_Title">Prodotti</li>
+                    <li>Applicazione destkop</li>
+                    <li>Perchè Dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <!-- Terza cella - Azienda -->
+            <div class="Foot_md">
+                <ul>
+                    <li class="Ul_Foot_Title">Azienda</li>
+                    <li>Applicazione destkop</li>
+                    <li>Perchè Dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <!-- Quarta cella - Supporto -->
+            <div class="Foot_md">
+                <ul>
+                    <li class="Ul_Foot_Title">Supporto</li>
+                    <li>Applicazione destkop</li>
+                    <li>Perchè Dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <!-- Quinta cella - Community -->
+            <div class="Foot_md">
+                <ul>
+                    <li class="Ul_Foot_Title">Community</li>
+                    <li>Applicazione destkop</li>
+                    <li>Perchè Dropbox</li>
+                    <li>Piani</li>
+                </ul>
+            </div>
         </section>
-    </footer>    
+    </footer>
 </body>
+
 </html>

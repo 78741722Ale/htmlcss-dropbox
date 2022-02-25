@@ -7,7 +7,9 @@
 }
 
 body {
-    min-width: 1400px;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 1440px;
+    height: max-content;
     background-color: var(--BodyColor);
 }
 
@@ -17,12 +19,20 @@ body {
     display: table;  
 }
 
+/*#region palette colori */
+
 /********* 
 Palette Colori Figma
 *********/
+
 :root {
     --NavButton : rgba(0, 97, 255, 1);
     --NavButtonText : rgb(255, 255, 255);
+    --SiteFooterBack : rgb(0, 0, 0);
+    --SiteFooterLighter : rgb(255, 255, 255);
+    --TransparentColor : rgb(255, 255, 255);
+    --TextColor : rgb(0, 0, 0);
+    --TextLight : rgb(202, 201, 201);
 }
 
 /********* 
@@ -41,9 +51,12 @@ Palette Colori - Blocchi
     --Dimensions-Main-Footer : 1100px;
 }
 
+/*#endregion palette colori */
+
+/*#region site_header*/
+
+
 /********************+/ 
-
-
 /* Contenuto dell'Header 
 **********/
 
@@ -114,6 +127,10 @@ Palette Colori - Blocchi
     background-color: aqua;
 }
 
+/*#endregion site_header*/
+
+/*#region site_main*/
+
 /********************+/ 
 
 /* Contenuto del Main 
@@ -123,6 +140,7 @@ Palette Colori - Blocchi
 alla modifica della larghezza ne 
 consegue una diminuzione da parte
 di tutti i suoi child */
+
 
 #site_main {
     background-color: rgb(250, 250, 250);
@@ -413,7 +431,7 @@ cambia a 50/50 senza margin */
 ********/
 
 .Drop_Questions {
-    background-color:rgba(50, 221, 44, 0.397);
+    background-color:var(--TransparentColor);
     position: relative;
     width: 100%;
     height: 600px;
@@ -423,7 +441,7 @@ cambia a 50/50 senza margin */
 /* Container principale per le domande in fondo  */
 
 .Qstn_Main {
-    background-color: rgba(192, 223, 20, 0.541);
+    background-color: var(--TransparentColor);
     width: 800px;
     height: 500px; 
     top: 50%;
@@ -437,9 +455,10 @@ md = lg media
 sm = small */
 
 .Qstn_md {
-    background-color: var(--Colonne);
+    background-color: var(--SiteFooterLighter);
     position: relative;
     width: 95%;
+    border-bottom: 1px solid var(--TextLight);
     margin-top: 1%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -447,31 +466,48 @@ sm = small */
     height: 20%;
 }
 
+.Qstn_md h2 {
+    margin-top: 4%;
+    color: var(--TextColor);
+}
+
 .Qstn_sm {
-    background-color: var(--Colonne);
     position: relative;
     width: 95%;
-    margin-top: 1%;
+    border-bottom: 1px solid var(--TextLight);
     margin-left: 2.5%;
     margin-right: 2.5%;
     float: left;
     height: 17%;
 }
 
-/**** 
+.Qstn_sm p {
+    padding-right: 15%;
+    display: inline-block;
+    padding-top: 3.75%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--TextColor);
+    background-color: var(--SiteFooterLighter); 
+}
+
+/*#endregion site_main*/
+
+/*#region site_Footer*/
+
+/********* 
 Footer del Sito Web
 ********/
 
 #site_Footer {
-    background-color: rgb(243, 204, 157);
+    background-color: var(--SiteFooterBack);
     width: 100%;
-    height: 650px;
+    height: 450px;
     margin: 0 auto;
     position: relative;
 }
 
 .Drop_Foot {
-    background-color:rgba(235, 238, 51, 0.397);
     position: absolute;
     width: 1100px;
     height: 450px;
@@ -480,13 +516,35 @@ Footer del Sito Web
     transform: translate(-50%);
 }
 
-.Foot_md {
-    background-color: var(--Colonne);
+.Foot_md { 
     position: relative;
     width: 20%;
     margin-top: 2%;
-    /* margin-left: 1.5%;
-    margin-right: 1.5%; */
     float: left;
     height: 70%;
 }
+
+/* Lista non ordinata del footer */
+
+.Foot_md ul {
+    font-size: small;
+    color: var(--SiteFooterLighter);
+    line-height: 1.75rem;
+    list-style: none;
+    text-align: left;
+}
+
+
+.Ul_Foot_Title {
+    display: inline-block;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    color: var(--SiteFooterLighter);
+}
+
+
+
+
+/*#endregion  site_Footer*/
