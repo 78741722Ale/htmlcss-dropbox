@@ -43,6 +43,7 @@ Palette Colori Figma
     --Aziende_Under : rgba(180, 208, 231, 1);
     --Dimensions-Main-Footer : 1300px;
     --Dimensions-Drop-Users : 1250px;
+    --Navbar-Col-Dimensions:50%;
 }
 
 /********* 
@@ -84,20 +85,10 @@ Palette Colori - Blocchi
     background-color:var(--NavItems) ;
     float: left;
     position: relative;
-    width: 400px;
+    width:var(--Navbar-Col-Dimensions);
     height: 100%;
 }
 
-.logo {
-    width: 25%;
-}
-
-.nav_lft a {
-   text-align: center;
-    padding: 10px;
-    font-size: 1rem;
-    text-decoration: none;
-}
 
 /* Contenuto a DX della NavBar */
 
@@ -105,7 +96,7 @@ Palette Colori - Blocchi
     background-color:var(--NavItems) ;
     float: right;
     position: relative;
-    width: 400px;
+    width: var(--Navbar-Col-Dimensions);
     height: 100%;
 }
 
