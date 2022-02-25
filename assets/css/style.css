@@ -1,5 +1,11 @@
 /* Regole Generali del foglio di stile */
 
+/* ******** */
+/*#region palette colori */
+/*#endregion palette colori */
+/* ******** */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +39,7 @@ Palette Colori Figma
     --TransparentColor : rgb(255, 255, 255);
     --TextColor : rgb(0, 0, 0);
     --TextLight : rgb(202, 201, 201);
+    --Aziende_Under : rgba(180, 208, 231, 1);
 }
 
 /********* 
@@ -370,7 +377,8 @@ cambia a 50/50 senza margin */
 }
 
 .Aznd-lg25 img {
-    width: 100%;
+    width:100%;
+    height:100%;
 }
 
 /**** Sezione Immagini Azienda a SX
@@ -381,7 +389,7 @@ cambia a 50/50 senza margin */
     float: left;
     position: relative;
     width: 25%;
-    height: 50%;
+    height: 60%;
 }
 
 /**** Sezione Testo Azienda in centro
@@ -392,7 +400,7 @@ cambia a 50/50 senza margin */
     float: left;
     position: relative;
     width: 50%;
-    height: 50%;
+    height: 60%;
 }
 
 /**** Sezione Immagini Azienda a DX
@@ -403,29 +411,76 @@ cambia a 50/50 senza margin */
     float: right;
     position: relative;
     width: 25%;
-    height: 50%;
+    height: 60%;
 }
 
-/**** Sezione Prova Gratuita
+/* CONCLUSA */
+/*#region Aziende Under */
+
+/**** 
+Sezione Prova Gratuita
 ********/
 
 .Drop_Aziende_Under {
-    background-color:rgba(128, 0, 128, 0.466);
+    background-color:var(--Aziende_Under);
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 40%;
     bottom: 0;
 }
 
 .Aznd_Und {
-    background-color: rgba(223, 128, 20, 0.541);
-    width: 800px;
+    /* background-color: rgba(223, 128, 20, 0.541); */
+    width: 1300px;
     height: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/* Colonna di SX */
+
+.Aznd-lg40 {  
+    float: left;
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+.Aznd-lg40 h2 {
+    color:rgba(97, 8, 43, 1);
+    font-size: 2.25rem;
+    padding-top: 8%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+/* Colonna di DX */
+
+.Aznd-lg50-rgt {
+    text-align: right;
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.Aznd-lg50-rgt a {
+    position: relative;
+    top:25%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--TextColor);
+    background-color: var(--TransparentColor);
+    padding: 1.5% 15% 1.5% 15%;
+}
+
+/*#endregion Aziende Under */
+
+
+/* CONCLUSA */
+/*#region Domande Frequenti */
 
 /**** Sezione Per le domande frequenti
 ********/
@@ -491,8 +546,12 @@ sm = small */
     background-color: var(--SiteFooterLighter); 
 }
 
+/*#endregion Domande frequenti */
+
+
 /*#endregion site_main*/
 
+/* CONCLUSA */
 /*#region site_Footer*/
 
 /********* 
