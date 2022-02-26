@@ -43,7 +43,7 @@ Palette Colori Figma
     --Aziende_Under : rgba(180, 208, 231, 1);
     --Dimensions-Main-Footer : 1300px;
     --Dimensions-Drop-Users : 1250px;
-    --Navbar-Col-Dimensions:50%;
+    --Navbar-Col-Dimensions:650px;
 }
 
 /********* 
@@ -66,17 +66,18 @@ Palette Colori - Blocchi
 
 /*#region site_header*/
 
-
 /********************+/ 
 /* Contenuto dell'Header 
 **********/
+
+/* CONCLUSA */
+/*#region Navbar del sito web */
 
 /* NavBar */
 
 .navbar {
     width: 100%;
     height: 75px;
-    background-color: var(--NavBar);
 }
 
 /* Contenuto a SX della NavBar */
@@ -98,12 +99,10 @@ Palette Colori - Blocchi
 }
 
 .nav_lft_sm img {
-    width: 80%;
+    width: 100%;
     object-fit: contain;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 27px 0px 0px 10px;
 }
 
 /* Cella grande che contiene lista non ordinata */
@@ -123,32 +122,55 @@ Palette Colori - Blocchi
 .nav_lft_lg li {
     list-style: none;   
     display: inline;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 0.9rem;
 }
 
 .nav_lft_lg ul {
-    padding: 26px 0px 0px 25px;
+    padding: 26px 0px 0px 20px;
 }
 
 /* Contenuto a DX della NavBar */
 
 .nav_rgt {
-    background-color:var(--NavItems) ;
     float: right;
     position: relative;
     width: var(--Navbar-Col-Dimensions);
     height: 100%;
 }
 
-.btn_nav {
+.nav_rgt_lg {
+    position: relative;
+    float: right;
+    height: 100%;
+}
+
+.nav_rgt_lg a {
+    text-decoration: none;
+    color: var(--TextColor);
+} 
+
+.nav_rgt_lg li {
+    list-style: none;   
+    display: inline;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.nav_rgt_lg ul {
+    padding: 26px 0px 0px 0px;
+}
+
+.btn_nav {     
     background-color:var(--NavButton);
-    color: var(--NavButtonText);
-    text-align: center;
-    padding: 10px;
-    font-size: 0.8rem;
+    padding: 5px 15px 5px 15px;  
     text-decoration: none;
 }
+
+.btn_nav_style {
+    font-size: 0.85rem;
+}
+/*#endregion Navbar del sito */
 
 /* Header */
 
