@@ -157,20 +157,20 @@ di tutti i suoi child */
     background-color:var(--DropBusinessCont);
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     top: 5rem;
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
 }
 
 .Itms_bsnes {
-background-color: var(--ItemsBusinessCont);
-position: absolute;
-margin: 0 auto;
-width: 95%;
-height: 95%;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+    background-color: var(--ItemsBusinessCont);
+    position: absolute;
+    margin: 0 auto;
+    width: 95%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .lg100_bsnes {
@@ -184,16 +184,78 @@ transform: translate(-50%,-50%);
     height: 150px;
 }
 
-.lg30_bsnes {
-    background-color:var(--Colonne); 
+/* Celle da 33% */
+
+.lg27_bsnes {
+    background-color:var(--TransparentColor); 
     position: relative;
     float: left;
-    width: 30%;
+    width: 27%;
     height: 76%;
     top: 5%;
-    margin-left:1.66%;
-    margin-right:1.66%;
+    margin: 0% 3% 0% 3%;
 }
+
+/* Cella piccola con titolo e icona */
+
+.col-sm-bsnes {
+    border: 0.25px solid lightgrey;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 7%;
+}
+
+.col-sm-bsnes h4 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.col-sm-bsnes i {
+    padding-right: 10px;  
+}
+
+/* Cella grande con varie icone e testi */
+
+.col-lg-bsnes {
+    float: left;
+    width: 100%;
+    height: 93%;
+    background-color: rgba(195, 235, 122, 0.527);
+}
+
+/* Intestazione della cella */
+
+.col-lg-bsnes h3 {
+    padding: 25px 0px 10px 20px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.col-lg-bsnes h4 {
+    padding: 15px 0px 10px 20px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* Contenuto della cella */
+
+.col-lg-bsnes span {
+    padding: 10px 0px 20px 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.Icon-sm {
+    font-size: 0.9rem;
+    padding-right: 10px;
+}
+
 
 /* CONCLUSA */
 /*#region Dropbox enterprise e ufficio vendite */
@@ -347,10 +409,7 @@ transform: translate(-50%,-50%);
     border: 0.5px solid var(--TextColor);
     text-align: center;
     text-decoration: none;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 7px 20px 7px 20px;
 }
 
 /*#endregion Dropbox partner */
