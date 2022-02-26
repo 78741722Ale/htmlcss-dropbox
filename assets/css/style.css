@@ -1,8 +1,8 @@
+/*#region Regole del CSS generali */
+
 /* Regole Generali del foglio di stile */
 
 /* ******** */
-/*#region palette colori */
-/*#endregion palette colori */
 /* ******** */
 
 
@@ -12,12 +12,30 @@
     box-sizing: border-box;
 }
 
+/* La width a 1865px è quella del mio monitor,
+in modo da poter vedere correttamente senza
+scrollbar laterale. impostata poi a
+min-width: 1440px */
+
 body {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     width: 1865px;
     height: max-content;
     background-color: var(--BodyColor);
+}
+
+/* Larghezza fissa a Main
+alla modifica della larghezza ne 
+consegue una diminuzione da parte
+di tutti i suoi child */
+
+#site_main {
+    background-color: rgb(250, 250, 250);
+    width: var(--Dimensions-Main-Footer);
+    height: 4350px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .clearfix::after{
@@ -64,11 +82,9 @@ Palette Colori - Blocchi
 
 /*#endregion palette colori */
 
-/*#region site_header*/
+/*#endregion Regole del CSS generali */
 
-/********************+/ 
-/* Contenuto dell'Header 
-**********/
+/*#region site_header*/
 
 /* CONCLUSA */
 /*#region Navbar del sito web */
@@ -172,6 +188,10 @@ Palette Colori - Blocchi
 }
 /*#endregion Navbar del sito */
 
+/********************/ 
+/* Contenuto dell'Header 
+**********/
+
 /* Header */
 
 .cont_header {
@@ -195,24 +215,9 @@ Palette Colori - Blocchi
 
 /*#region site_main*/
 
-/********************+/ 
-
+/**********/ 
 /* Contenuto del Main 
 **********/
-
-/* Larghezza fissa a Main
-alla modifica della larghezza ne 
-consegue una diminuzione da parte
-di tutti i suoi child */
-
-
-#site_main {
-    background-color: rgb(250, 250, 250);
-    width: var(--Dimensions-Main-Footer);
-    height: 4350px;
-    margin: 0 auto;
-    position: relative;
-}
 
 /* CONCLUSA */
 /*#region DropBox Business - 3 macroaree */
@@ -341,7 +346,6 @@ di tutti i suoi child */
 .Icon-sm {
     font-size: 0.9rem;
 }
-
 /* Bottone della prova gratis con suo stile */
 
 .btn_30 { 
@@ -755,6 +759,16 @@ height -lg : atezza large */
     height:100%;
     position: absolute;
     right: 80%;
+}
+
+/* Linea Orizzontale piccola */
+
+.lg-bsnes-hr {
+    color: rgba(211, 211, 211, 0.5);
+    width: 20%;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .Aznd-height-lg {
