@@ -207,11 +207,20 @@ transform: translate(-50%,-50%);
 }
 
 .Enter_Title {
+    border: 0.25px solid lightgrey;
     position: relative;
-    background-color:var(--Colonne); 
+    background-color:white; 
     width: 100%;
     height: 20%;
+}
+
+.Enter_Title span {
     text-align: center;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .Enter_Content {
@@ -222,11 +231,13 @@ transform: translate(-50%,-50%);
     position: relative;
 }
 
+/* CONCLUSA */
+/*#region Dropbox partner */
+
 /**** Sezione DropBox Contatto Partner 
 ********/
 
 .Drop_Partner {
-    background-color:var(--DropBusinessCont);
     position: relative;
     width: 100%;
     height: 600px;
@@ -237,40 +248,55 @@ transform: translate(-50%,-50%);
 /* Contenuto a SX della Section */
 
 .Partner_Lft {
-    background-color:rgba(0, 0, 0, 0.29);
     float: left;
     position: relative;
-    width: 49%;
+    width: 48%;
     height: 100%;
 }
 
 .Partner_Lft img {
     width: 100%;
+    height: 100%;
     object-fit: contain;
-    top: 0%;
-    left: 0%;
 }
 
 /* Contenuto a DX della Section */
 
 .Partner_Rgt {
-    background-color:rgba(0, 0, 0, 0.29);
     float: right;
     position: relative;
-    width: 45%;
-    height: 85%;
+    width: 48%;
+    height: 90%;
 }
 
 .Partner_Rgt h2 {
+    width: 80%;
     text-align: left;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.25rem;
+    font-size: 1.75rem;
 }
 
 .Partner_Rgt p {
+    width: 70%;
     text-align: left;
-    line-height: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
 }
+
+.btn_part {
+    color: var(--TextColor);
+    background-color: var(--SiteFooterLighter);
+    border: 0.5px solid var(--TextColor);
+    text-align: center;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*#endregion Dropbox partner */
 
 /**** Sezione DropBox Più operazioni
 ********/
@@ -321,7 +347,9 @@ transform: translate(-50%,-50%);
 .lg30_opr_up img {
     width: 100%;
     height: 50%;
+    object-fit: contain;
     margin-bottom: 5px;
+    margin-left: 0%;
 }
 
 .lg30_opr_up h3 {
