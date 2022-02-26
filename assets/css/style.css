@@ -219,9 +219,16 @@ transform: translate(-50%,-50%);
     font-size: 1.25rem;
     position: absolute;
     top: 50%;
+    padding-left: 5px;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+.Enter_Title i {
+    padding-right: 5px;  
+}
+
+/* Container della cella */
 
 .Enter_Content {
     background-color:rgba(0, 0, 0, 0.29); 
@@ -230,6 +237,9 @@ transform: translate(-50%,-50%);
     text-align: center;
     position: relative;
 }
+
+
+
 
 /* CONCLUSA */
 /*#region Dropbox partner */
