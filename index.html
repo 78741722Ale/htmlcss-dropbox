@@ -23,9 +23,19 @@
         <!-- NavBar principale del sito -->
         <div class="navbar clearfix">
             <!-- Contenuto a Sx della navbar, con Logo  -->
-            <div class="nav_lft">
-
-
+            <div class="nav_lft clearfix">
+                <!-- Logo -->
+                <div class="nav_lft_sm">
+                    <img src="./assets/img/logo-small.png" alt="Logo di Dropbox">
+                </div>
+                <!-- lista non ordinata con Ancor tag -->
+                <div class="nav_lft_lg">
+                    <ul>
+                        <li><a href="#">Perchè Dropbox?</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                        <li><a href="#">Piani e prezzi</a></li>
+                    </ul>
+                </div> 
             </div>
 
             <!-- Contenuto a Dx della navbar, con pulsante inizia e 3 ancor -->
@@ -49,8 +59,9 @@
     site main una larghezza fissa e tutte le altre section una width al 100% con margin auto -->
     <main id="site_main">
 
+        <!-- Sezione Completata -->
         <!-- DropBox Business -->
-        <section class="Drop_Business">
+        <div class="Drop_Business">
             <!-- Titolo della sezione Business e radiobutton -->
             <!-- 3 colonne principali sviluppate con clearfix -->
             <div class="Itms_bsnes clearfix">
@@ -67,11 +78,45 @@
                         <!-- Intestazione e prezzo -->
                         <h3>Professional</h3>
                         <h4>19.99 €</h4>
-                        <span style="padding: 0px 0px 25px 20px; text-align: left; color: color: rgb(201, 191, 191);"> /mese </span><br><br>
+                        <span style="padding: 0px 0px 25px 20px; text-align: left; color: rgb(201, 191, 191);"> /mese </span><br><br>
                         <!-- Utente e spazio -->
                         <span> <i class="fa-regular fa-user Icon-sm"></i> 1 utente </span>
                         <span> <i class="fa-regular fa-folder Icon-sm"></i></i> 3 TB di spazio di archiviazione sicuro </span>
                         <span> <i class="fa-solid fa-pen Icon-sm"></i> Funzioni di produttività premium e condivisione file semplice e sicura.</span>
+                        <!-- Pulsante prova o acquista ora -->
+                        <a class="btn_30 btn_30_style" href="#"> Prova gratis per 30 giorni</a>
+                        <span>oppure <a href="#"> acquista ora</a></span>
+                        <hr class="lg-bsnes-hr">
+                        <!-- Punti del piano con sua lista non ordinata -->
+                        <h4 style="font-size: 1rem;">Punti salienti del piano</h4>
+                        <ul>
+                            <li> <i class="fa-solid fa-check Icon-sm"></i> Invia file fino a 100GB con Dropbox Transfert </li>
+                            <li> <i class="fa-solid fa-check Icon-sm"></i> Cartelle offline su dispositivi mobili</li>
+                            <li><i class="fa-solid fa-check Icon-sm"></i> Pulizia remota dell'account</li>
+                            <li><i class="fa-solid fa-check Icon-sm"></i> Filigrana documento</li>
+                            <li><i class="fa-solid fa-check Icon-sm"></i> Assistenza Prioritaria via email e Chat</li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <!-- Cella Centrale -->
+                <div class="col_bsnes_cnt clearfix">
+                    <!-- Titolo della cella con icona -->
+                    <div class="col-sm-bsnes">
+                        <h4><i class="far fa-building"></i>Team</h4>
+                    </div>
+                    <!-- Contenuto della Cella -->
+                    <div class="col-lg-bsnes">
+                        <!-- Intestazione e prezzo -->
+                        <h3>Advanced</h3>
+                        <h4>19.99 €</h4>
+                        <span style="padding: 0px 0px 25px 20px; text-align: left; color: rgb(201, 191, 191);"> / utente / mese, a
+                            partire da 3 utenti </span><br><br>
+                        <!-- Utente e spazio -->
+                        <span> <i class="fa-solid fa-user-plus"></i> 1 utente </span>
+                        <span> <i class="fa-regular fa-folder Icon-sm"></i> 3 TB di spazio di archiviazione sicuro </span>
+                        <span> <i class="fa-regular fa-face-smile"></i> Funzioni di produttività premium e condivisione file semplice e
+                            sicura.</span>
                         <!-- Pulsante prova o acquista ora -->
                         <a class="btn_30 btn_30_style" href="#"> Prova gratis per 30 giorni</a>
                         <span>oppure <a href="#"> acquista ora</a></span>
@@ -85,10 +130,10 @@
                             <li><i class="fa-solid fa-check Icon-sm"></i> Pulizia remota dell'account</li>
                             <li><i class="fa-solid fa-check Icon-sm"></i> Filigrana documento</li>
                             <li><i class="fa-solid fa-check Icon-sm"></i> Assistenza Prioritaria via email e Chat</li>
+                            <li><i class="fa-solid fa-check Icon-sm"></i> Assistenza Prioritaria via email e Chat</li>
                         </ul>
-                    </div>
+                    </div>            
                 </div>
-               
 
                 <!-- Cella a DX -->
                 <div class="col_bsnes_Rgt clearfix">
@@ -113,8 +158,7 @@
                         <!-- Punti del piano con sua lista non ordinata -->
                         <h4 style="font-size: 1rem;">Punti salienti del piano</h4>
                         <ul>
-                            <li> <i class="fa-solid fa-check Icon-sm"></i> Invia file fino a 100GB con Dropbox Transfert
-                            </li>
+                            <li> <i class="fa-solid fa-check Icon-sm"></i> Invia file fino a 100GB con Dropbox Transfert</li>
                             <li> <i class="fa-solid fa-check Icon-sm"></i> Cartelle offline su dispositivi mobili</li>
                             <li><i class="fa-solid fa-check Icon-sm"></i> Pulizia remota dell'account</li>
                             <li><i class="fa-solid fa-check Icon-sm"></i> Filigrana documento</li>
@@ -122,20 +166,17 @@
                             <li><i class="fa-solid fa-check Icon-sm"></i> Assistenza Prioritaria via email e Chat</li>
                         </ul>
                     </div>
-
                 </div>
-
             </div>
         </section>
 
         <!-- Sezione Completata -->
-        <!-- Sezione Enterprise -->
-        <div class="Drop_Enterprise">
+        <!-- DropBox Enterprise -->
+        <div class="Drop_Enterprise"> 
             <!-- Contenitore del Titolo team - aggiungi icona build  -->
             <div class="Enter_Title">
                 <h4><i class="far fa-building"></i>Team</h4>
             </div>
-
             <!--  Contenuto della cella Enterprise -->
             <div class="Enter_Content clearfix">
                 <!-- Cella di SX con titoli e soluzioni -->
@@ -147,7 +188,6 @@
                         professionisti IT nella gestione su qualsiasi scala.
                     </p>
                 </div>
-
                 <!-- Cella di DX con pulsante -->
                 <div class="Enterprise_sm">
                     <a class="btn_enter" href="#"> Contatta l'ufficio vendite</a>
@@ -227,7 +267,8 @@
             </div>
         </section>
 
-        <!-- Sezione Numero di Team Utilizzatori di Dropbox -->
+        <!-- Numero di Team Utilizzatori di Dropbox -->
+        <!-- Trovare modo di utilizzare un solo h2 giustificando bene il testo -->
         <!-- Sezione Completata -->
         <div class="Drop_Users">
             <div class="Users clearfix">
@@ -271,7 +312,6 @@
                 <img src="./assets/img/topps.svg" alt="">
             </div>
         </div>
-
 
         <!-- Sezione Testo Centrale delle Aziende-->
         <!-- Sezione Completata -->

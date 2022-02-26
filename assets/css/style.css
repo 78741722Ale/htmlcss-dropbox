@@ -82,13 +82,54 @@ Palette Colori - Blocchi
 /* Contenuto a SX della NavBar */
 
 .nav_lft {
-    background-color:var(--NavItems) ;
     float: left;
     position: relative;
     width:var(--Navbar-Col-Dimensions);
     height: 100%;
 }
 
+/* Cella piccola che contiene logo */
+
+.nav_lft_sm {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.nav_lft_sm img {
+    width: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Cella grande che contiene lista non ordinata */
+
+.nav_lft_lg {
+    position: relative;
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+
+.nav_lft_lg a {
+    text-decoration: none;
+    color: var(--TextColor);
+} 
+
+.nav_lft_lg li {
+    list-style: none;   
+    display: inline;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.nav_lft_lg ul {
+    padding: 26px 0px 0px 25px;
+}
 
 /* Contenuto a DX della NavBar */
 
@@ -151,6 +192,9 @@ di tutti i suoi child */
     position: relative;
 }
 
+/* CONCLUSA */
+/*#region DropBox Business - 3 macroaree */
+
 /* Sezione DropBox Business */
 
 .Drop_Business {
@@ -179,8 +223,7 @@ di tutti i suoi child */
     height: 150px;
 }
 
-/* Celle da 33% 
-divisa in SX - Centro e DX*/
+/* Celle  divisa in SX - Centro e DX*/
 
 .col_bsnes_Lft {
     position: relative;
@@ -189,6 +232,18 @@ divisa in SX - Centro e DX*/
     height: 82%;
     top: 5%;
     margin: 0% 3% 0% 0%;
+    border: 0.25px solid lightgrey;
+}
+
+/* Cella centrale */
+
+.col_bsnes_cnt {
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 82%;
+    top: 5%;
+    margin: 0% 4.5% 0% 6.5%;
     border: 0.25px solid lightgrey;
 }
 
@@ -203,7 +258,6 @@ divisa in SX - Centro e DX*/
     margin: 0% 0% 0% 3%;
     border: 0.25px solid lightgrey;
 }
-
 
 /* Cella piccola con titolo e icona */
 
@@ -272,18 +326,19 @@ divisa in SX - Centro e DX*/
     display: inline-block;
     margin: 30px 0px 20px 25px;
     text-align: center;
-    text-decoration: none;
-   
+    text-decoration: none;  
 }
 
 .btn_30_style { 
-    color: var(--TextLight);
+    color: white;
     background-color: var(--NavButton);
     text-align: center;
     text-decoration: none;
     padding: 7px 50px 7px 50px;
     font-size: 0.9rem;
 }
+
+/* Linea Orizzontale piccola */
 
 .lg-bsnes-hr {
     color: rgba(211, 211, 211, 0.5);
@@ -302,11 +357,17 @@ divisa in SX - Centro e DX*/
     font-size: 0.9rem;
     list-style: none;
 }
+/* Colore delle spunte */
+
+.fa-check {
+    color: var(--NavButton);
+}
 
 .col-lg-bsnes li {
     padding: 5px 0px 10px;
 }
 
+/*#endregion DropBox Business - 3 macroaree */
 
 /* CONCLUSA */
 /*#region Dropbox enterprise e ufficio vendite */
@@ -593,7 +654,7 @@ Sezione Numero Utilizzatori
 /*#endregion Dropbox Users*/
 
 /* CONCLUSA */
-/*#region Aziende Drop */
+/*#region Aziende Dropbox */
 
 /**** Id per la sezione di aziende
 ********/
@@ -706,7 +767,7 @@ height -lg : atezza large */
 /*#endregion Aziende Drop DX  */
 
 /* CONCLUSA */
-/*#region Aziende Under */
+/*#region Aziende Porta Drobox Business */
 
 /**** 
 Sezione Prova Gratuita
@@ -832,7 +893,7 @@ sm = small */
 
 /*#endregion site_main*/
 
-/* CONCLUSA (mancano loghi in fondo */
+/* CONCLUSA (mancano loghi in fondo) */
 /*#region site_Footer*/
 
 /********* 
