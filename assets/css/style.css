@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-/* La width a 1865px è quella del mio monitor,
-in modo da poter vedere correttamente senza
-scrollbar laterale. impostata poi a
-min-width: 1440px */
-
 body {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
@@ -21,10 +16,7 @@ body {
     background-color: var(--BodyColor);
 }
 
-/* Larghezza fissa a Main
-alla modifica della larghezza ne 
-consegue una diminuzione da parte
-di tutti i suoi child */
+/* Tutti gli ID dei container */
 
 #site_main {
     background-color: rgb(250, 250, 250);
@@ -39,7 +31,20 @@ di tutti i suoi child */
     height: max-content;
 }
 
+#site_Footer {
+    background-color: var(--SiteFooterBack);
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
 
+#Aziende {
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(151, 245, 245, 0.623);
+    width: 100%;
+    height: 800px;
+}
 
 /*#region ALL COMMON UTILITIES */
 
@@ -77,7 +82,57 @@ di tutti i suoi child */
     font-size: 0.9rem;
 }
 
+/* Utilities dell'Header */
 
+.Hero_Main_sm span,
+.Hero_Main_sm i {
+    margin: 5% 0% 3% 0%;
+    display: block;
+}
+
+.Hero_Main_sm,
+.Hero_Main_lg,
+.Hero_Main_Container,
+.Hero_Text_Container,
+.Aznd-lg25,
+.Aznd-height-md,
+.Drop_Aziende_SX,
+.Drop_Aziende_Cnt,
+.Aznd-height-lg,
+.Users_Tit {
+    float: left;
+    position: relative;
+}
+
+.Qstn_md,
+.Qstn_sm {
+    float: left;
+    margin-left: 2.5%;
+    position: relative;
+    width: 95%;
+    border-bottom: 1px solid var(--TextLight);
+}
+
+.Qstn_Main,
+.Drop_Foot,
+.Aznd_Und {
+    left: 50%;
+    position: absolute;
+}
+
+.Aznd-lg40,
+.Aznd-lg50-rgt {
+    position: relative;
+    height: 100%;
+}
+
+.Users,
+.Aznd_Cent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 /*#endregion ALL COMMON UTILITIES */
 
@@ -105,6 +160,7 @@ Palette Colori Figma
 
 /*#endregion Regole del CSS generali */
 
+/* CONCLUSA */
 /*#region site_header*/
 
 /* CONCLUSA */
@@ -197,8 +253,6 @@ Palette Colori Figma
 
 .Hero_Text_Container {
     width: 80%;
-    float: left;
-    position: relative;
     height: 30%;
     left: 8%;
 }
@@ -215,8 +269,6 @@ Palette Colori Figma
 
 .Hero_Main_Container {
     width: 75%;
-    float: left;
-    position: relative;
     height: 70%;
     left: 8%;
 }
@@ -224,18 +276,8 @@ Palette Colori Figma
 /* Cella SX */
 
 .Hero_Main_sm {
-    float: left;
-    position: relative;
     width: 40%;
     height: 100%;
-}
-
-/* Utilities della cella a SX */
-
-.Hero_Main_sm span,
-.Hero_Main_sm i {
-    margin: 5% 0% 3% 0%;
-    display: block;
 }
 
 .Hero_Main_sm p {
@@ -267,8 +309,6 @@ Palette Colori Figma
 /* Cella DX */
 
 .Hero_Main_lg {
-    float: left;
-    position: relative;
     width: 60%;
     height: 100%;
     z-index: 1;
@@ -280,7 +320,6 @@ Palette Colori Figma
     width: 110%;
     height: 110%;
 }
-
 
 /*#endregion site_header*/
 
@@ -734,15 +773,9 @@ Sezione Numero Utilizzatori
 .Users {
     width: 95%;
     height: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .Users_Tit {  
-    float: left;
-    position: relative;
     width: 100%;
     height: 20%;
 }
@@ -766,18 +799,7 @@ Sezione Numero Utilizzatori
 /**** Id per la sezione di aziende
 ********/
 
-#Aziende {
-    position: relative;
-    margin: 0 auto;
-    background-color: rgba(151, 245, 245, 0.623);
-    width: 100%;
-    height: 800px;
-}
-
 .Aznd-lg25 {
-    background-color: rgba(128, 0, 128, 0.541);
-    float: left;
-    position: relative;
     width: 50%;
     height: 50%;
 }
@@ -792,9 +814,6 @@ Sezione Numero Utilizzatori
 ********/
 
 .Drop_Aziende_SX {
-    background-color:var(--DropBusinessCont);
-    float: left;
-    position: relative;
     width: 25%;
     height: 60%;
 }
@@ -804,32 +823,16 @@ Sezione Numero Utilizzatori
 
 .Drop_Aziende_Cnt {
     background-color:rgba(245, 245, 245, 1);
-    float: left;
-    position: relative;
     width: 50%;
     height: 60%;
 }
 
-/* Container per le 2 celle */
-
 .Aznd_Cent {
-    /* background-color: rgba(223, 128, 20, 0.541); */
     width: 95%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
-/* Celle all'interno del
-container centrale della sezione aziende 
-
-height -md : atezza media 
-height -lg : atezza large */
 
 .Aznd-height-md {
-    float: left;
-    position: relative;
     margin:0% 2% 1.5% 2.5%;
     width: 95%;
     height: 30%;
@@ -842,19 +845,13 @@ height -lg : atezza large */
     right: 80%;
 }
 
-/* Linea Orizzontale piccola */
-
 .lg-bsnes-hr {
     color: rgba(211, 211, 211, 0.5);
     width: 20%;
-    margin-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:20px 0px 20px 25px;
 }
 
 .Aznd-height-lg {
-    float: left;
-    position: relative;
     margin:1% 2% 1% 2.5%;
     width: 80%;
     height: 60%;
@@ -874,7 +871,6 @@ height -lg : atezza large */
 ********/
 
 .Drop_Aziende_DX {
-    /* background-color:var(--DropBusinessCont); */
     float: right;
     position: relative;
     width: 25%;
@@ -899,21 +895,16 @@ Sezione Prova Gratuita
 }
 
 .Aznd_Und {
-    /* background-color: rgba(223, 128, 20, 0.541); */
     width: 1300px;
     height: 200px;
-    position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%);
 }
 
 /* Colonna di SX */
 .Aznd-lg40 {  
     float: left;
-    position: relative;
     width: 40%;
-    height: 100%;
 }
 
 .Aznd-lg40 h2 {
@@ -929,9 +920,7 @@ Sezione Prova Gratuita
 .Aznd-lg50-rgt {
     text-align: right;
     float: right;
-    position: relative;
     width: 50%;
-    height: 100%;
 }
 
 .Aznd-lg50-rgt a {
@@ -965,22 +954,11 @@ Sezione Prova Gratuita
     width: 800px;
     height: 500px; 
     top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%);
-    position: absolute;
 }
 
-/* Container di tutte le domande frequenti  
-md = lg media
-sm = small */
-
 .Qstn_md {
-    position: relative;
-    width: 95%;
-    border-bottom: 1px solid var(--TextLight);
     margin-top: 1%;
-    margin-left: 2.5%;
-    float: left;
     height: 20%;
 }
 
@@ -990,11 +968,6 @@ sm = small */
 }
 
 .Qstn_sm {
-    position: relative;
-    width: 95%;
-    border-bottom: 1px solid var(--TextLight);
-    margin-left: 2.5%;
-    float: left;
     height: 17%;
 }
 
@@ -1017,19 +990,10 @@ sm = small */
 Footer del Sito Web
 ********/
 
-#site_Footer {
-    background-color: var(--SiteFooterBack);
-    width: 100%;
-    height: 450px;
-    position: relative;
-}
-
 .Drop_Foot {
-    position: absolute;
     width: 1100px;
     height: max-content;
     top:15%;
-    left: 50%;
     transform: translate(-50%);
 }
 
