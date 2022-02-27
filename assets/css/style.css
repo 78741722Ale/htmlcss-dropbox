@@ -25,9 +25,8 @@ body {
 /* Tutti gli ID dei container */
 
 #site_main {
-    background-color: rgb(250, 250, 250);
     width: var(--Dimensions-Main-Footer);
-    height: 4350px;
+    height: 4450px;
     margin: 0 auto;
     position: relative;
 }
@@ -672,7 +671,7 @@ Palette Colori Figma
 
 /*#endregion Dropbox partner */
 
-/* DA CONCLUDERE */
+/* CONCLUSA */
 /*#region Dropbox più operazioni */
 
 /**** Sezione DropBox Più operazioni
@@ -680,7 +679,7 @@ Palette Colori Figma
 
 .Drop_Operations {
     background-color:var(--DropBusinessCont);
-    height: 1300px;
+    height: 1400px;
     top: 7rem;
     margin-bottom: 10%;
 }
@@ -692,8 +691,8 @@ Palette Colori Figma
 
 .Drop_Opr_Title h2 {
     text-align: left;
-    font-size: 2rem;
-    margin-top: 4%;
+    font-size: 2.75rem;
+    margin-top: 1%;
 }
 
 .Drop_Opr_Content {
@@ -735,7 +734,6 @@ Palette Colori Figma
     line-height: 1.5rem;
     padding: 0% 0% 2% 1%;
 }
-
 
 /*#endregion Dropbox più operazioni */
 
@@ -948,7 +946,7 @@ Sezione Prova Gratuita
     display: inline-block;
     padding-top: 3.75%;
     font-size: 0.9rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /*#endregion Domande frequenti */
