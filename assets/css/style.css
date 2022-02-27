@@ -11,7 +11,7 @@
 body {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    width: 1865px;
+    width: 1440px;
     height: max-content;
     background-color: var(--BodyColor);
 }
@@ -21,8 +21,6 @@ body {
     clear: both;
     display: table;  
 }
-
-/* Tutti gli ID dei container */
 
 #site_main {
     width: var(--Dimensions-Main-Footer);
@@ -115,7 +113,8 @@ body {
 .nav_lft,
 .lg30_opr_up,
 .lg30_opr_und,
-.col_opr {
+.col_opr,
+.Foot_md {
     float: left;
     position: relative;
 }
@@ -131,7 +130,8 @@ body {
 
 .Qstn_Main,
 .Drop_Foot,
-.Aznd_Und {
+.Aznd_Und,
+.End_Footer {
     left: 50%;
     position: absolute;
 }
@@ -202,6 +202,12 @@ body {
     float: left;
     position: relative;
     width: 100%;
+}
+
+.End_Footer,
+.Drop_Foot {
+    width: 1100px;
+    transform: translate(-50%);
 }
 
 /*#endregion ALL COMMON UTILITIES */
@@ -386,6 +392,7 @@ Palette Colori Figma
 
 /*#endregion site_header*/
 
+/* CONCLUSA */
 /*#region site_main*/
 
 /* CONCLUSA */
@@ -953,21 +960,17 @@ Sezione Prova Gratuita
 
 /*#endregion site_main*/
 
-/* CONCLUSA (mancano loghi in fondo) */
+/* CONCLUSA */
 /*#region site_Footer*/
 
-.Drop_Foot {
-    width: 1100px;
+.Drop_Foot { 
     height: max-content;
     top:15%;
-    transform: translate(-50%);
 }
 
 .Foot_md { 
-    position: relative;
     width: 20%;
     margin-top: 2%;
-    float: left;
     height: 70%;
 }
 
@@ -983,6 +986,24 @@ Sezione Prova Gratuita
     font-size: larger;
     font-weight: bold;
     margin-bottom: 1.25rem;
+}
+
+.End_Footer {
+    height: 80px;
+    bottom: 10px;
+}
+
+.End_Footer hr {
+    width: 10%;
+    color: lightgrey;
+    margin-bottom: 30px;
+}
+
+.End_Footer i,
+.End_Footer span {
+    color: lightgrey;
+    padding-right: 0px 5px 0px 5px;
+    font-size: 0.8rem;  
 }
 
 /*#endregion  site_Footer*/
