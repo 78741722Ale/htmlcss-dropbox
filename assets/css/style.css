@@ -115,7 +115,8 @@ body {
 .Partner_Lft,
 .nav_lft,
 .lg30_opr_up,
-.lg30_opr_und {
+.lg30_opr_und,
+.col_opr {
     float: left;
     position: relative;
 }
@@ -195,6 +196,13 @@ body {
 .nav_lft_sm,
 .nav_lft_lg {
     height: 100%;
+}
+
+.col_opr_lg,
+.col_opr_sm {
+    float: left;
+    position: relative;
+    width: 100%;
 }
 
 /*#endregion ALL COMMON UTILITIES */
@@ -685,55 +693,49 @@ Palette Colori Figma
 .Drop_Opr_Title h2 {
     text-align: left;
     font-size: 2rem;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .Drop_Opr_Content {
     width: 100%;
     height: 1200px;
     margin: 0 auto;
-    top: 4%;
 }
 
-/* Celle superiori */
-
-.lg30_opr_up {
-    margin-bottom: 10%;
-    background-color:rgba(212, 42, 42, 0.555); 
-    width: 33.33%; 
-    height: 500px;
+.col_opr {
+    width: 33.33%;
+    height: 650px; 
+    margin-bottom: 3%;
 }
 
-.lg30_opr_up img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin-bottom: 5px;
-    margin-left: 0%;
+.col_opr_lg {
+    height: 50%;
+} 
+
+.col_opr_sm {
+    height: 50%;
 }
 
-.lg30_opr_up h3 {
+.col_opr_sm img {
+    width: 87%;
+    height: 95%;
+    background-size: contain;   
+}
+
+.col_opr_lg h3 {
     color: var(--TextColor);
     font-size: 1.75rem;
-    padding-bottom: 5%;
+    padding: 3% 0% 5% 1%;
 }
 
-.lg30_opr_up p {
-    width: 85%;
+.col_opr_lg p {
+    width: 75%;
     color: var(--TextColor);
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     line-height: 1.5rem;
-    padding-bottom: 5px;
+    padding: 0% 0% 2% 1%;
 }
 
-/* Celle Inferiori */
-
-.lg30_opr_und {
-    margin-bottom: 5%;
-    background-color:rgba(211, 111, 111, 0.555);
-    width: 33.33%;
-    height: 500px;
-}
 
 /*#endregion Dropbox più operazioni */
 
