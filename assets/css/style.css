@@ -2,9 +2,6 @@
 
 /* Regole Generali del foglio di stile */
 
-/* ******** */
-/* ******** */
-
 
 * {
     margin: 0;
@@ -241,13 +238,23 @@ Palette Colori - Blocchi
     transform: translate(-50%,-50%);
 }
 
+/* Cella da 100 con titolo e radiobutton */
+
 .lg100_bsnes {
-    background-color:var(--Colonne); 
     top:1.5rem;
     float: left;
     position: relative;
     width: 100%;
     height: 150px;
+}
+
+.lg100_bsnes h2 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.Itms_bsnes label {
+    padding-right: 10px;
 }
 
 /* Celle  divisa in SX - Centro e DX*/
@@ -257,7 +264,7 @@ Palette Colori - Blocchi
     float: left;
     width: 27%;
     height: 82%;
-    top: 5%;
+    top: 3%;
     margin: 0% 3% 0% 0%;
     border: 0.25px solid lightgrey;
 }
@@ -269,7 +276,7 @@ Palette Colori - Blocchi
     float: left;
     width: 27%;
     height: 82%;
-    top: 5%;
+    top: 3%;
     margin: 0% 4.5% 0% 6.5%;
     border: 0.25px solid lightgrey;
 }
@@ -281,7 +288,7 @@ Palette Colori - Blocchi
     float: right;
     width: 27%;
     height: 82%;
-    top: 5%;
+    top: 3%;
     margin: 0% 0% 0% 3%;
     border: 0.25px solid lightgrey;
 }
@@ -946,7 +953,7 @@ Footer del Sito Web
 .Drop_Foot {
     position: absolute;
     width: 1100px;
-    height: 450px;
+    height: max-content;
     top:15%;
     left: 50%;
     transform: translate(-50%);
