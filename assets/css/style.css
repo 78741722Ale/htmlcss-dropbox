@@ -16,6 +16,12 @@ body {
     background-color: var(--BodyColor);
 }
 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;  
+}
+
 /* Tutti gli ID dei container */
 
 #site_main {
@@ -47,12 +53,6 @@ body {
 }
 
 /*#region ALL COMMON UTILITIES */
-
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;  
-}
 
 /* Utilities per la navbar */
 
@@ -97,9 +97,21 @@ body {
 .Aznd-lg25,
 .Aznd-height-md,
 .Drop_Aziende_SX,
-.Drop_Aziende_Cnt,
+.Drop_Aziende_Cnt
+{
+    float: left;
+    position: relative;
+}
+
 .Aznd-height-lg,
-.Users_Tit {
+.Users_Tit,
+.lg100_bsnes,
+.col_bsnes_Lft,
+.col_bsnes_cnt,
+.col-sm-bsnes,
+.col-lg-bsnes,
+.Partner_Lft,
+.nav_lft {
     float: left;
     position: relative;
 }
@@ -127,11 +139,58 @@ body {
 }
 
 .Users,
-.Aznd_Cent{
+.Aznd_Cent,
+.Itms_bsnes{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.col_bsnes_Lft,
+.col_bsnes_cnt,
+.col_bsnes_Rgt {
+    border: 0.25px solid lightgrey;
+    top: 3%;
+    height: 82%;
+    width: 27%;
+}
+
+.btn_30,
+.btn_30_style,
+.btn_part{
+    text-align: center;
+    text-decoration: none; 
+}
+
+.Drop_Operations,
+.Drop_Opr_Title {
+    position: relative;
+    width: 100%;
+}
+
+.Partner_Rgt,
+.Drop_Aziende_DX {
+    float: right;
+    position: relative;
+}
+
+.Partner_Lft img,
+.Aznd-lg25 img {
+    width: 100%;
+    height: 100%;    
+}
+
+.Partner_Lft,
+.Partner_Rgt {
+    width: 48%;
+    height: 100%;
+}
+
+.nav_lft,
+.nav_lft_sm,
+.nav_lft_lg {
+    height: 100%;
 }
 
 /*#endregion ALL COMMON UTILITIES */
@@ -176,17 +235,13 @@ Palette Colori Figma
 /* Contenuto a SX della NavBar */
 
 .nav_lft {
-    float: left;
-    position: relative;
     width:var(--Navbar-Col-Dimensions);
-    height: 100%;
 }
 
 /* Cella piccola che contiene logo */
 
 .nav_lft_sm {
     width: 20%;
-    height: 100%;
 }
 
 .nav_lft_sm img {
@@ -196,11 +251,8 @@ Palette Colori Figma
     margin: 25px 0px 0px 10px;
 }
 
-/* Cella grande che contiene lista non ordinata */
-
 .nav_lft_lg {
     width: 75%;
-    height: 100%;
 }
 
 .nav_lft_lg li {
@@ -325,10 +377,6 @@ Palette Colori Figma
 
 /*#region site_main*/
 
-/**********/ 
-/* Contenuto del Main 
-**********/
-
 /* CONCLUSA */
 /*#region DropBox Business - 3 macroaree */
 
@@ -342,21 +390,15 @@ Palette Colori Figma
 }
 
 .Itms_bsnes {
-    position: relative;
     margin: 0 auto;
     width: 100%;
     height: 95%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 /* Cella da 100 con titolo e radiobutton */
 
 .lg100_bsnes {
     top:1.5rem;
-    float: left;
-    position: relative;
     width: 100%;
     height: 150px;
 }
@@ -370,48 +412,24 @@ Palette Colori Figma
     padding-right: 10px;
 }
 
-/* Celle  divisa in SX - Centro e DX*/
-
 .col_bsnes_Lft {
-    position: relative;
-    float: left;
-    width: 27%;
-    height: 82%;
-    top: 3%;
     margin: 0% 3% 0% 0%;
-    border: 0.25px solid lightgrey;
 }
-
-/* Cella centrale */
 
 .col_bsnes_cnt {
-    position: relative;
-    float: left;
-    width: 27%;
-    height: 82%;
-    top: 3%;
     margin: 0% 4.5% 0% 6.5%;
-    border: 0.25px solid lightgrey;
 }
-
-/* Cella di DX */
 
 .col_bsnes_Rgt {
     position: relative;
     float: right;
-    width: 27%;
-    height: 82%;
-    top: 3%;
     margin: 0% 0% 0% 3%;
-    border: 0.25px solid lightgrey;
 }
 
 /* Cella piccola con titolo e icona */
 
 .col-sm-bsnes {
     border: 0.25px solid lightgrey;
-    position: relative;
-    float: left;
     width: 100%;
     height: 5%;
 }
@@ -433,12 +451,9 @@ Palette Colori Figma
 /* Cella grande con varie icone e testi */
 
 .col-lg-bsnes {
-    float: left;
     width: 100%;
     height: 93%;
 }
-
-/* Intestazione della cella */
 
 .col-lg-bsnes h3 {
     padding: 25px 0px 10px 25px;
@@ -466,32 +481,23 @@ Palette Colori Figma
 .Icon-sm {
     font-size: 0.9rem;
 }
-/* Bottone della prova gratis con suo stile */
 
 .btn_30 { 
     display: inline-block;
     margin: 30px 0px 20px 25px;
-    text-align: center;
-    text-decoration: none;  
 }
 
 .btn_30_style { 
     color: white;
     background-color: var(--NavButton);
-    text-align: center;
-    text-decoration: none;
     padding: 7px 50px 7px 50px;
     font-size: 0.9rem;
 }
 
-/* Linea Orizzontale piccola */
-
 .lg-bsnes-hr {
     color: rgba(211, 211, 211, 0.5);
     width: 20%;
-    margin-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:20px 0px 20px 25px;
 }
 
 /* Lista non ordinata stilizzata */
@@ -624,27 +630,11 @@ Palette Colori Figma
 
 /* Contenuto a SX della Section */
 
-.Partner_Lft {
-    float: left;
-    position: relative;
-    width: 48%;
-    height: 100%;
-}
-
 .Partner_Lft img {
-    width: 100%;
-    height: 100%;
     object-fit: contain;
 }
 
 /* Contenuto a DX della Section */
-
-.Partner_Rgt {
-    float: right;
-    position: relative;
-    width: 48%;
-    height: 90%;
-}
 
 .Partner_Rgt h2 {
     width: 80%;
@@ -665,8 +655,6 @@ Palette Colori Figma
     color: var(--TextColor);
     background-color: var(--SiteFooterLighter);
     border: 0.5px solid var(--TextColor);
-    text-align: center;
-    text-decoration: none;
     padding: 7px 20px 7px 20px;
 }
 
@@ -680,8 +668,6 @@ Palette Colori Figma
 
 .Drop_Operations {
     background-color:var(--DropBusinessCont);
-    position: relative;
-    width: 100%;
     height: 1300px;
     top: 7rem;
     margin-bottom: 10%;
@@ -690,9 +676,7 @@ Palette Colori Figma
 /* Titolo della sezione Operazioni */
 
 .Drop_Opr_Title {
-    position: relative;
     background-color:var(--Colonne); 
-    width: 100%;
     height: 10%;
     text-align: center;
 }
@@ -804,12 +788,6 @@ Sezione Numero Utilizzatori
     height: 50%;
 }
 
-.Aznd-lg25 img {
-    width:100%;
-    height:100%;
-    /* filter:  invert(3); */
-}
-
 /**** Sezione Immagini Azienda a SX
 ********/
 
@@ -871,8 +849,6 @@ Sezione Numero Utilizzatori
 ********/
 
 .Drop_Aziende_DX {
-    float: right;
-    position: relative;
     width: 25%;
     height: 60%;
 }
@@ -937,9 +913,6 @@ Sezione Prova Gratuita
 
 /* CONCLUSA */
 /*#region Domande Frequenti */
-
-/**** Sezione Per le domande frequenti
-********/
 
 .Drop_Questions {
     background-color:var(--TransparentColor);
