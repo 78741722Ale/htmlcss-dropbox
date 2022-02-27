@@ -2,7 +2,6 @@
 
 /* Regole Generali del foglio di stile */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -35,11 +34,52 @@ di tutti i suoi child */
     position: relative;
 }
 
+#site_header {
+    width: 100%;
+    height: max-content;
+}
+
+
+
+/*#region ALL COMMON UTILITIES */
+
 .clearfix::after{
     content: "";
     clear: both;
     display: table;  
 }
+
+/* Utilities per la navbar */
+
+.nav_lft_sm ,
+.nav_lft_lg {
+    position: relative;
+    float: left;
+} 
+
+.nav_lft_lg a,
+.nav_rgt_lg a {
+    text-decoration: none;
+    color: var(--TextColor);
+}
+
+.nav_rgt ,
+.nav_rgt_lg {
+    float: right;
+    position: relative;
+    height: 100%;
+}
+
+.nav_lft_lg li,
+.nav_rgt_lg li {
+    list-style: none;   
+    display: inline;
+    font-size: 0.9rem;
+}
+
+
+
+/*#endregion ALL COMMON UTILITIES */
 
 /*#region palette colori */
 
@@ -59,22 +99,6 @@ Palette Colori Figma
     --Dimensions-Main-Footer : 1300px;
     --Dimensions-Drop-Users : 1250px;
     --Navbar-Col-Dimensions:650px;
-}
-
-/********* 
-Palette Colori - Blocchi
-(diventerà poi inutile)
-*********/
-
-:root {
-    --NavBar:rgba(244, 249, 7, 0.38);
-    --BodyColor:rgba(255, 255, 255, 0.38);
-    --NavItems:rgba(247, 196, 104, 1);
-    --HeadContainer:rgba(203, 143, 158, 1);
-    --DropBusinessCont: rgba(244, 249, 7, 0.38);
-    --ItemsBusinessCont : rgba(253, 16, 16, 0.42);
-    --Colonne : rgba(0, 0, 0, 0.596);
-    --Dimensions-Main-Footer : 1300px;
 }
 
 /*#endregion palette colori */
@@ -105,9 +129,7 @@ Palette Colori - Blocchi
 /* Cella piccola che contiene logo */
 
 .nav_lft_sm {
-    position: relative;
-    float: left;
-    width: 15%;
+    width: 20%;
     height: 100%;
 }
 
@@ -115,28 +137,18 @@ Palette Colori - Blocchi
     width: 100%;
     object-fit: contain;
     position: absolute;
-    margin: 27px 0px 0px 10px;
+    margin: 25px 0px 0px 10px;
 }
 
 /* Cella grande che contiene lista non ordinata */
 
 .nav_lft_lg {
-    position: relative;
-    float: left;
     width: 75%;
     height: 100%;
 }
 
-.nav_lft_lg a {
-    text-decoration: none;
-    color: var(--TextColor);
-} 
-
 .nav_lft_lg li {
-    list-style: none;   
-    display: inline;
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 10px 15px;   
 }
 
 .nav_lft_lg ul {
@@ -146,28 +158,11 @@ Palette Colori - Blocchi
 /* Contenuto a DX della NavBar */
 
 .nav_rgt {
-    float: right;
-    position: relative;
     width: var(--Navbar-Col-Dimensions);
-    height: 100%;
 }
-
-.nav_rgt_lg {
-    position: relative;
-    float: right;
-    height: 100%;
-}
-
-.nav_rgt_lg a {
-    text-decoration: none;
-    color: var(--TextColor);
-} 
 
 .nav_rgt_lg li {
-    list-style: none;   
-    display: inline;
     padding: 10px 20px;
-    font-size: 0.9rem;
 }
 
 .nav_rgt_lg ul {
@@ -194,19 +189,98 @@ Palette Colori - Blocchi
 .cont_header {
     position: relative;
     width: 100%;
-    height: 700px;
-    background-color: var(--HeadContainer);
+    height: 750px;
+    background-color: #B4D0E7;
 }
 
-.h1_head {
-    padding-top: 25px;
-    line-height: 4rem;
-    margin: 0 auto;
-    font-size:3rem;
-    width: 750px;
-    height: 200px;
-    background-color: aqua;
+/* Container del testo Hero */
+
+.Hero_Text_Container {
+    width: 80%;
+    float: left;
+    position: relative;
+    height: 30%;
+    left: 8%;
 }
+
+.Hero_Title {
+    padding-top: 4%;
+    text-align: justify;
+    line-height: 6rem;
+    font-size:72px;
+    width: 90%;
+}
+
+/* Container per Foto a DX e testo a SX */
+
+.Hero_Main_Container {
+    width: 75%;
+    float: left;
+    position: relative;
+    height: 70%;
+    left: 8%;
+}
+
+/* Cella SX */
+
+.Hero_Main_sm {
+    float: left;
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+/* Utilities della cella a SX */
+
+.Hero_Main_sm span,
+.Hero_Main_sm i {
+    margin: 5% 0% 3% 0%;
+    display: block;
+}
+
+.Hero_Main_sm p {
+    margin: 15% 0% 8% 0%;
+    width: 85%;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.Hero_Main_sm span {  
+    font-size: 0.85rem;
+}
+
+.Hero_Main_sm i {  
+    font-size: 2.5rem;
+}
+
+.btn_head {     
+    background-color:var(--NavButton);
+    padding: 7px 15px 7px 15px;  
+    text-decoration: none;
+}
+
+.btn_head_style {
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Cella DX */
+
+.Hero_Main_lg {
+    float: left;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Hero_Main_lg img {
+    object-fit: contain;
+    margin: 7.5% 0% 0% 0%;
+    width: 110%;
+    height: 110%;
+}
+
 
 /*#endregion site_header*/
 
