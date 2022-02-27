@@ -97,7 +97,9 @@ body {
 .Aznd-lg25,
 .Aznd-height-md,
 .Drop_Aziende_SX,
-.Drop_Aziende_Cnt
+.Drop_Aziende_Cnt,
+.Drop_Opr_Title,
+.Drop_Opr_Content
 {
     float: left;
     position: relative;
@@ -111,7 +113,9 @@ body {
 .col-sm-bsnes,
 .col-lg-bsnes,
 .Partner_Lft,
-.nav_lft {
+.nav_lft,
+.lg30_opr_up,
+.lg30_opr_und {
     float: left;
     position: relative;
 }
@@ -673,25 +677,22 @@ Palette Colori Figma
     margin-bottom: 10%;
 }
 
-/* Titolo della sezione Operazioni */
-
 .Drop_Opr_Title {
-    background-color:var(--Colonne); 
     height: 10%;
-    text-align: center;
+    width: 100%;
 }
 
-/* Container sezione Operazioni */
-/* Per ora altezza fissa poi cambia */
+.Drop_Opr_Title h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 5%;
+}
 
 .Drop_Opr_Content {
-    background-color:var(--Colonne);
-    float: left;
-    position: relative;
     width: 100%;
     height: 1200px;
     margin: 0 auto;
-    top: 5%;
+    top: 4%;
 }
 
 /* Celle superiori */
@@ -699,15 +700,13 @@ Palette Colori Figma
 .lg30_opr_up {
     margin-bottom: 10%;
     background-color:rgba(212, 42, 42, 0.555); 
-    position: relative;
-    float: left;
     width: 33.33%; 
     height: 500px;
 }
 
 .lg30_opr_up img {
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: contain;
     margin-bottom: 5px;
     margin-left: 0%;
@@ -731,9 +730,7 @@ Palette Colori Figma
 
 .lg30_opr_und {
     margin-bottom: 5%;
-    background-color:rgba(212, 42, 42, 0.555);
-    position: relative;
-    float: left;
+    background-color:rgba(211, 111, 111, 0.555);
     width: 33.33%;
     height: 500px;
 }
@@ -959,10 +956,6 @@ Sezione Prova Gratuita
 /* CONCLUSA (mancano loghi in fondo) */
 /*#region site_Footer*/
 
-/********* 
-Footer del Sito Web
-********/
-
 .Drop_Foot {
     width: 1100px;
     height: max-content;
@@ -977,8 +970,6 @@ Footer del Sito Web
     float: left;
     height: 70%;
 }
-
-/* Lista non ordinata del footer */
 
 .Foot_md ul {
     font-size: small;
