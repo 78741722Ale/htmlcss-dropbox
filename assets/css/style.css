@@ -35,7 +35,7 @@ body {
 }
 
 #site_Footer {
-    background-color: var(--SiteFooterBack);
+    background-color: var(--ObscurityColor);
     width: 100%;
     height: 450px;
     position: relative;
@@ -53,6 +53,8 @@ body {
 
 /* Utilities per tutto il contenuto */
 
+/* Colore comune */
+
 .Enter_Title,
 .Enter_Content {
     border: 0.25px solid lightgrey;
@@ -67,7 +69,7 @@ body {
 .nav_lft_lg a,
 .nav_rgt_lg a {
     text-decoration: none;
-    color: var(--TextColor);
+    color: var(--ObscurityColor);
 }
 
 .nav_rgt ,
@@ -286,14 +288,55 @@ body {
 
 /*#region palette colori */
 
-/* Palette Colori Figma */
+/* Palette Colori - Testi e bottoni */
 :root {
     --NavButton : rgba(0, 97, 255, 1);
-    --SiteFooterBack : rgb(0, 0, 0);
+    --ObscurityColor : rgb(0, 0, 0);
     --TransparentColor : rgb(255, 255, 255);
-    --TextColor : rgb(0, 0, 0);
     --TextLight : rgb(202, 201, 201);
     --Aziende_Under : rgba(180, 208, 231, 1);
+    
+}
+
+/* Colori di Aziende */
+:root {
+    --Designit : rgba(162, 211, 155, 1);
+    --Arizona : rgba(97, 8, 43, 1);
+    --Florida : rgba(0, 147, 206, 1);
+    --Topps : rgba(255, 28, 28, 1);
+    --WorldBycicle : rgba(213, 0, 31, 1);
+    --LonelyPlanet : rgba(13, 36, 129, 1);
+    --Hearst : rgba(180, 208, 231, 1);
+    --ClearChannel : rgba(255, 216, 48, 1);
+}
+
+.Designit {
+    background-color: var(--Designit);
+}
+.Asu {
+    background-color: var(--Arizona);
+}
+.Florida {
+    background-color: var(--Florida);
+}
+.Topps {
+    background-color: var(--Topps);
+}
+.World {
+    background-color: var(--WorldBycicle);
+}
+.Lonely {
+    background-color: var(--LonelyPlanet);
+}
+.Hearst {
+    background-color: var(--Hearst);
+}
+.Channel {
+    background-color: var(--ClearChannel);
+}
+
+/* Dimensioni di container CSS  */
+:root {
     --Dimensions-Main-Footer : 1300px;
     --Dimensions-Drop-Users : 1250px;
     --Navbar-Col-Dimensions:650px;
@@ -628,14 +671,12 @@ body {
     padding: 7px 55px 7px 55px;
     font-size: 0.9rem;
 }
-
 /*#endregion Dropbox enterprise e ufficio vendite */
 
 /* CONCLUSA */
 /*#region Dropbox partner */
 
-/**** Sezione DropBox Contatto Partner 
-********/
+/* Sezione DropBox Contatto Partner */
 
 .Drop_Partner {
     position: relative;
@@ -646,7 +687,6 @@ body {
 }
 
 /* Contenuto a SX della Section */
-
 .Partner_Lft img {
     object-fit: contain;
 }
@@ -669,9 +709,9 @@ body {
 }
 
 .btn_part {
-    color: var(--TextColor);
+    color: var(--ObscurityColor);
     background-color: var(--TransparentColor);
-    border: 0.5px solid var(--TextColor);
+    border: 0.5px solid var(--ObscurityColor);
     padding: 7px 20px 7px 20px;
 }
 
@@ -719,14 +759,14 @@ body {
 }
 
 .col_opr_lg h3 {
-    color: var(--TextColor);
+    color: var(--ObscurityColor);
     font-size: 1.75rem;
     padding: 3% 0% 5% 1%;
 }
 
 .col_opr_lg p {
     width: 75%;
-    color: var(--TextColor);
+    color: var(--ObscurityColor);
     font-size: 1.05rem;
     line-height: 1.5rem;
     padding: 0% 0% 2% 1%;
@@ -778,6 +818,10 @@ body {
 .Aznd-lg25 {
     width: 50%;
     height: 50%;
+}
+
+.Aznd-lg25 img {
+    filter: invert(1);
 }
 
 /* Sezione Immagini Azienda a SX */
@@ -892,7 +936,7 @@ body {
     top:25%;
     text-decoration: none;
     font-size: 0.8rem;
-    color: var(--TextColor);
+    color: var(--ObscurityColor);
     background-color: var(--TransparentColor);
     padding: 1.5% 15% 1.5% 15%;
 }
@@ -910,7 +954,6 @@ body {
 }
 
 /* Container principale per le domande in fondo  */
-
 .Qstn_Main {
     width: 800px;
     height: 500px; 
@@ -925,7 +968,7 @@ body {
 
 .Qstn_md h2 {
     margin-top: 4%;
-    color: var(--TextColor);
+    color: var(--ObscurityColor);
 }
 
 .Qstn_sm {
