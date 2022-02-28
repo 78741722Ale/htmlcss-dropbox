@@ -163,8 +163,8 @@ body {
 .col_bsnes_Rgt {
     border: 0.25px solid lightgrey;
     top: 3%;
-    height: 82%;
-    width: 27%;
+    height: 81%;
+    width: 29%;
 }
 
 .btn_30,
@@ -276,19 +276,20 @@ body {
     height: 50%;
 } 
 
+.lg-bsnes_inline,
+.col-lg-bsnes h3,
+.col-lg-bsnes h4 {
+    text-align: left; 
+}
+
 /*#endregion ALL COMMON UTILITIES */
 
 /*#region palette colori */
 
-/********* 
-Palette Colori Figma
-*********/
-
+/* Palette Colori Figma */
 :root {
     --NavButton : rgba(0, 97, 255, 1);
-    --NavButtonText : rgb(255, 255, 255);
     --SiteFooterBack : rgb(0, 0, 0);
-    --SiteFooterLighter : rgb(255, 255, 255);
     --TransparentColor : rgb(255, 255, 255);
     --TextColor : rgb(0, 0, 0);
     --TextLight : rgb(202, 201, 201);
@@ -346,8 +347,6 @@ Palette Colori Figma
     padding: 26px 0px 0px 20px;
 }
 
-/* Contenuto a DX della NavBar */
-
 .nav_rgt {
     width: var(--Navbar-Col-Dimensions);
 }
@@ -371,11 +370,8 @@ Palette Colori Figma
 }
 /*#endregion Navbar del sito */
 
-/********************/ 
-/* Contenuto dell'Header 
-**********/
-
-/* Header */
+ 
+/* Contenuto dell'Header */
 
 .cont_header {
     position: relative;
@@ -417,9 +413,9 @@ Palette Colori Figma
 
 .Hero_Main_sm p {
     margin: 15% 0% 8% 0%;
-    width: 85%;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
+    width: 75%;
+    line-height: 1.5rem;
+    font-size: 1.05rem;
 }
 
 .Hero_Main_sm span {  
@@ -469,7 +465,7 @@ Palette Colori Figma
 .Drop_Business {
     position: relative;
     height: 1450px;
-    top: 5rem;
+    top: 6.5rem;
 }
 
 .Itms_bsnes {
@@ -498,7 +494,7 @@ Palette Colori Figma
 }
 
 .col_bsnes_cnt {
-    margin: 0% 4.5% 0% 6.5%;
+    margin: 0% 2% 0% 2.5%;
 }
 
 .col_bsnes_Rgt {
@@ -521,16 +517,8 @@ Palette Colori Figma
     padding-right: 10px;  
 }
 
-/* Cella grande con varie icone e testi */
-
 .col-lg-bsnes {
     height: 93%;
-}
-
-.lg-bsnes_inline,
-.col-lg-bsnes h3,
-.col-lg-bsnes h4 {
-    text-align: left; 
 }
 
 .lg-bsnes_inline {
@@ -700,7 +688,7 @@ Palette Colori Figma
 
 .btn_part {
     color: var(--TextColor);
-    background-color: var(--SiteFooterLighter);
+    background-color: var(--TransparentColor);
     border: 0.5px solid var(--TextColor);
     padding: 7px 20px 7px 20px;
 }
@@ -714,9 +702,9 @@ Palette Colori Figma
 
 .Drop_Operations {
     background-color:var(--DropBusinessCont);
-    height: 1400px;
+    height: 1450px;
     top: 7rem;
-    margin-bottom: 10%;
+    margin-bottom: 9%;
 }
 
 .Drop_Opr_Title {
@@ -773,11 +761,11 @@ Palette Colori Figma
     position: relative;
     width: var(--Dimensions-Drop-Users);
     height: 350px;
-    top: 4.5rem;
+    top: 5.0rem;
 }
 
 .Users {
-    width: 95%;
+    width: 100%;
     height: 80%;
 }
 
@@ -866,8 +854,7 @@ Palette Colori Figma
     font-size: 1.3rem;
 }
 
-/**** Sezione Immagini Azienda a DX
-********/
+/* Sezione Immagini Azienda a DX */
 
 .Drop_Aziende_DX {
     width: 25%;
@@ -879,9 +866,7 @@ Palette Colori Figma
 /* CONCLUSA */
 /*#region Aziende Porta Drobox Business */
 
-/**** 
-Sezione Prova Gratuita
-********/
+/* Sezione Prova Gratuita */
 
 .Drop_Aziende_Under {
     background-color:var(--Aziende_Under);
@@ -992,7 +977,7 @@ Sezione Prova Gratuita
 
 .Foot_md ul {
     font-size: small;
-    color: var(--SiteFooterLighter);
+    color: var(--TransparentColor);
     line-height: 1.75rem;
     list-style: none;
 }
