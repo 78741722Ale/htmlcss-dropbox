@@ -51,7 +51,12 @@ body {
 
 /*#region ALL COMMON UTILITIES */
 
-/* Utilities per la navbar */
+/* Utilities per tutto il contenuto */
+
+.Enter_Title,
+.Enter_Content {
+    border: 0.25px solid lightgrey;
+}
 
 .nav_lft_sm ,
 .nav_lft_lg {
@@ -145,7 +150,8 @@ body {
 .Users,
 .Aznd_Cent,
 .Itms_bsnes,
-.Enter_Title h4{
+.Enter_Title h4,
+.col-sm-bsnes h4{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,7 +182,8 @@ body {
 }
 
 .Partner_Rgt,
-.Drop_Aziende_DX {
+.Drop_Aziende_DX,
+.col_bsnes_Rgt {
     float: right;
     position: relative;
 }
@@ -231,6 +238,43 @@ body {
     height: 100%;
 }
 
+.col-sm-bsnes h4,
+.col-lg-bsnes h4 {
+    font-size: 1.1rem;
+}
+
+.col-lg-bsnes span,
+.col-lg-bsnes ul {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.End_Footer i,
+.End_Footer span {
+    color: lightgrey;
+    padding-right: 0px 5px 0px 5px;
+    font-size: 0.8rem;  
+}
+
+.Drop_Business,
+.Itms_bsnes,
+.lg100_bsnes,
+.col-sm-bsnes,
+.col-lg-bsnes {
+    width: 100%;
+}
+
+.Icon-sm,
+.btn_30_style,
+.btn_head_style,
+.Qstn_sm p {
+    font-size: 0.9rem;
+}
+
+.col_opr_lg,
+.col_opr_sm {
+    height: 50%;
+} 
 
 /*#endregion ALL COMMON UTILITIES */
 
@@ -424,14 +468,12 @@ Palette Colori Figma
 
 .Drop_Business {
     position: relative;
-    width: 100%;
     height: 1450px;
     top: 5rem;
 }
 
 .Itms_bsnes {
     margin: 0 auto;
-    width: 100%;
     height: 95%;
 }
 
@@ -439,7 +481,6 @@ Palette Colori Figma
 
 .lg100_bsnes {
     top:1.5rem;
-    width: 100%;
     height: 150px;
 }
 
@@ -461,8 +502,6 @@ Palette Colori Figma
 }
 
 .col_bsnes_Rgt {
-    position: relative;
-    float: right;
     margin: 0% 0% 0% 3%;
 }
 
@@ -470,18 +509,12 @@ Palette Colori Figma
 
 .col-sm-bsnes {
     border: 0.25px solid lightgrey;
-    width: 100%;
     height: 5%;
 }
 
 .col-sm-bsnes h4 {
     font-weight: 500;
     text-align: center;
-    font-size: 1.1rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .col-sm-bsnes i {
@@ -491,35 +524,32 @@ Palette Colori Figma
 /* Cella grande con varie icone e testi */
 
 .col-lg-bsnes {
-    width: 100%;
     height: 93%;
+}
+
+.lg-bsnes_inline,
+.col-lg-bsnes h3,
+.col-lg-bsnes h4 {
+    text-align: left; 
+}
+
+.lg-bsnes_inline {
+    padding: 0px 0px 25px 20px;
+    color: rgb(161, 155, 155);
 }
 
 .col-lg-bsnes h3 {
     padding: 25px 0px 10px 25px;
-    text-align: left;
     font-size: 1.5rem;
 }
 
 .col-lg-bsnes h4 {
     padding: 15px 0px 10px 25px;
-    text-align: left;
-    font-size: 1.1rem;
 }
-
-/* Contenuto della cella */
 
 .col-lg-bsnes span {
     width: 95%;
     padding: 10px 0px 15px 25px;
-    display: inline-block;
-    font-size: 0.9rem;
-}
-
-/* Icone rimpicciolite ai lati dello span */
-
-.Icon-sm {
-    font-size: 0.9rem;
 }
 
 .btn_30 { 
@@ -531,7 +561,6 @@ Palette Colori Figma
     color: white;
     background-color: var(--NavButton);
     padding: 7px 50px 7px 50px;
-    font-size: 0.9rem;
 }
 
 .lg-bsnes-hr {
@@ -545,8 +574,6 @@ Palette Colori Figma
 .col-lg-bsnes ul {
     width: 90%;
     padding: 15px 0px 15px 25px;
-    display: inline-block;
-    font-size: 0.9rem;
     list-style: none;
 }
 /* Colore delle spunte */
@@ -573,7 +600,6 @@ Palette Colori Figma
 }
 
 .Enter_Title {
-    border: 0.25px solid lightgrey;
     background-color:white; 
     height: 20%;
 }
@@ -592,7 +618,6 @@ Palette Colori Figma
 /* Container della cella */
 
 .Enter_Content {
-    border: 0.25px solid lightgrey;  
     height: 80%;
     text-align: center;
 }
@@ -685,8 +710,7 @@ Palette Colori Figma
 /* CONCLUSA */
 /*#region Dropbox più operazioni */
 
-/**** Sezione DropBox Più operazioni
-********/
+/* Sezione DropBox Più operazioni */
 
 .Drop_Operations {
     background-color:var(--DropBusinessCont);
@@ -718,14 +742,6 @@ Palette Colori Figma
     margin-bottom: 3%;
 }
 
-.col_opr_lg {
-    height: 50%;
-} 
-
-.col_opr_sm {
-    height: 50%;
-}
-
 .col_opr_sm img {
     width: 87%;
     height: 95%;
@@ -751,9 +767,7 @@ Palette Colori Figma
 /* CONCLUSA */
 /*#region Dropbox Users */
 
-/******** 
-Sezione Numero Utilizzatori
-********/
+/* Sezione Numero Utilizzatori */
 
 .Drop_Users{
     position: relative;
@@ -796,8 +810,7 @@ Sezione Numero Utilizzatori
     height: 50%;
 }
 
-/**** Sezione Immagini Azienda a SX
-********/
+/* Sezione Immagini Azienda a SX */
 
 .Drop_Aziende_SX {
     width: 25%;
@@ -956,7 +969,6 @@ Sezione Prova Gratuita
     padding-right: 15%;
     display: inline-block;
     padding-top: 3.75%;
-    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -1001,13 +1013,6 @@ Sezione Prova Gratuita
     width: 10%;
     color: lightgrey;
     margin-bottom: 30px;
-}
-
-.End_Footer i,
-.End_Footer span {
-    color: lightgrey;
-    padding-right: 0px 5px 0px 5px;
-    font-size: 0.8rem;  
 }
 
 /*#endregion  site_Footer*/
