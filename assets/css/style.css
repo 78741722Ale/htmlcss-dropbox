@@ -1,4 +1,7 @@
+/* CONCLUSA */
 /*#region Regole del CSS generali */
+
+/*#region Regole dei container principali */
 
 /* Regole Generali del foglio di stile */
 
@@ -22,6 +25,14 @@ body {
     display: table;  
 }
 
+/* Dimensioni di container CSS  */
+:root {
+    --Dimensions-Main-Footer : 1300px;
+    --Dimensions-Drop-Users : 1250px;
+    --Navbar-Col-Dimensions: 650px;
+    --Dim_100 : 100%;
+}
+
 #site_main {
     width: var(--Dimensions-Main-Footer);
     height: 4450px;
@@ -30,31 +41,34 @@ body {
 }
 
 #site_header {
-    width: 100%;
+    width: var(--Dim_100);
     height: max-content;
+}
+
+#site_Footer,
+#Aziende {
+    width: var(--Dim_100);
+    position: relative;
 }
 
 #site_Footer {
     background-color: var(--ObscurityColor);
-    width: 100%;
     height: 450px;
-    position: relative;
 }
 
 #Aziende {
-    position: relative;
     margin: 0 auto;
     background-color: rgba(151, 245, 245, 0.623);
-    width: 100%;
     height: 800px;
 }
 
-/*#region ALL COMMON UTILITIES */
+/*#endregion Regole dei container principali */
+
+/*#region Common utilities principali */
 
 /* Utilities per tutto il contenuto */
 
 /* Colore comune */
-
 .Enter_Title,
 .Enter_Content {
     border: 0.25px solid lightgrey;
@@ -87,7 +101,6 @@ body {
 }
 
 /* Utilities dell'Header */
-
 .Hero_Main_sm span,
 .Hero_Main_sm i {
     margin: 5% 0% 3% 0%;
@@ -335,13 +348,6 @@ body {
     background-color: var(--ClearChannel);
 }
 
-/* Dimensioni di container CSS  */
-:root {
-    --Dimensions-Main-Footer : 1300px;
-    --Dimensions-Drop-Users : 1250px;
-    --Navbar-Col-Dimensions:650px;
-}
-
 /*#endregion palette colori */
 
 /*#endregion Regole del CSS generali */
@@ -430,7 +436,7 @@ body {
     padding-top: 4%;
     text-align: justify;
     line-height: 6rem;
-    font-size:72px;
+    font-size:76px;
     width: 90%;
 }
 
@@ -527,6 +533,12 @@ body {
 
 .col_bsnes_cnt {
     margin: 0% 2% 0% 2.5%;
+}
+
+.lg-bsnes-hr {
+    color: rgba(211, 211, 211, 0.5);
+    width: 20%;
+    margin:20px 0px 20px 25px;
 }
 
 .col_bsnes_Rgt {
@@ -856,12 +868,6 @@ body {
     height:100%;
     position: absolute;
     right: 80%;
-}
-
-.lg-bsnes-hr {
-    color: rgba(211, 211, 211, 0.5);
-    width: 20%;
-    margin:20px 0px 20px 25px;
 }
 
 .Aznd-height-lg {
